@@ -8,9 +8,7 @@ def main():
     # Penguin Prediction App
 
     This app predicts the **Palmer Penguin** species!
-
-    Data obtained from the [palmerpenguins library](https://github.com/allisonhorst/palmerpenguins) in R by Allison Horst.
-
+    
     The Palmer Penguin dataset contains information about various penguin species including Adelie, Chinstrap, and Gentoo. 
     This app predicts the species of a penguin based on features such as bill length, bill depth, flipper length, body mass, island, and sex.
     """)
