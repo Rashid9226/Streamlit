@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 # Load the saved model
-with open('purchase.pickle', 'rb') as handle:
+with open('purchase.pkl', 'rb') as handle:
     model = pickle.load(handle)
 
 
