@@ -10,7 +10,7 @@ import pandas as pd
 from joblib import load
 
 # Load the model
-model = load('C:\\Users\\User\\Desktop\\DATA\\pycharm\\Purchase Prediction\\purchase.joblib')
+model = load('purchase.joblib')
 
 
 
