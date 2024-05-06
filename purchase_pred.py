@@ -4,8 +4,14 @@ import numpy as np
 import pandas as pd
 
 # Load the saved model
-with open('purchase.pkl', 'rb') as handle:
-    model = pickle.load(handle)
+# with open('purchase.pkl', 'rb') as handle:
+#     model = pickle.load(handle)
+
+from joblib import load
+
+# Load the model
+model = load('C:\\Users\\User\\Desktop\\DATA\\pycharm\\Purchase Prediction\\purchase.joblib')
+
 
 
 # Function to predict using the loaded model
