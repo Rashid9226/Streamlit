@@ -87,7 +87,7 @@ def main():
         ''')
         st.write('## Prediction Page')
         st.write('''
-        This program uses historical purchase data for the product, accounting for the target audience's age and income, to predict whether or not a consumer will purchase it.
+        This model uses historical purchase data for the product, accounting for the target audience's age and income, to predict whether or not a consumer will purchase it.
         ''')
 
         # User input for features
