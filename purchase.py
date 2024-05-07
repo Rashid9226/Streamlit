@@ -87,7 +87,7 @@ def main():
         ''')
         st.write('## Prediction Page')
         st.write('''
-        This app predicts whether a customer will make a purchase or not based on the historical purchase data by considering the age and the Salary of the target audience
+        This program uses historical purchase data for the product, accounting for the target audience's age and income, to predict whether or not a consumer will purchase it.
         ''')
 
         # User input for features
