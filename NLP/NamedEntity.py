@@ -7,7 +7,7 @@ nlp=spacy.load('en_core_web_lg')
 st.header('Named Entity Recognition')
 user_input=st.text_area('Enter Text')
 
-if st.button('Displacy'):
+if st.button('Submit'):
     if user_input:
         doc=nlp(user_input)
         html=displacy.render(doc,style='ent',jupyter=False)
