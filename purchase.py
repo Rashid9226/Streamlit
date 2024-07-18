@@ -141,7 +141,6 @@ def main():
         st.write('## Contact Information')
         st.write('LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/muhammed-rashid01)')
         st.write('GitHub: [GitHub Profile](https://github.com/Rashid9226)')
-        st.write('Streamlit: [Streamlit profile](https://share.streamlit.io)')
         st.write('Portfolio: [Novypro Profile](https://www.novypro.com/profile_projects/rashid)')
         st.write('Email: muhammedrashid7274@gmail.com')
 
