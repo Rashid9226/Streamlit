@@ -10,7 +10,7 @@ if data is not None:
     # Read the Excel file
     df = pd.read_excel(data)
     
-    st.write(df)
+    # st.write(df)
     cols=df.columns
     col=st.selectbox("select Subject: ",df.columns)
     
