@@ -1,17 +1,27 @@
 import numpy as np
 import streamlit as st
 import tensorflow as tf
+import traceback
 
 st.set_page_config(page_title="Medical Insurance Predictor", layout="centered")
 st.title("🏥 Medical Insurance Cost Prediction")
 
+
 # ---------------------------------------------------
-# Load trained model (ONLY ONCE, prediction mode)
+# Load trained model (cached, with error handling)
 # ---------------------------------------------------
-model = tf.keras.models.load_model(
-    "med_ins_Pred.keras",
-    compile=False
-)
+@st.cache_resource
+def load_trained_model(path: str):
+    try:
+        return tf.keras.models.load_model(path, compile=False)
+    except Exception:
+        st.error("Failed to load the model. See details below.")
+        st.text(traceback.format_exc())
+        return None
+
+model = load_trained_model("med_ins_Pred.keras")
+if model is None:
+    st.stop()
 
 # ---------------------------------------------------
 # User Inputs
