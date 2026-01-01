@@ -9,7 +9,7 @@ st.title("🏥 Medical Insurance Cost Prediction")
 # Load trained model (ONLY ONCE, prediction mode)
 # ---------------------------------------------------
 model = tf.keras.models.load_model(
-    "med_ins_ann.keras",
+    "med_ins_Pred.keras",
     compile=False
 )
 
